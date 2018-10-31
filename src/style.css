@@ -1,6 +1,14 @@
+@font-face {
+  font-family: 'WAC';
+  src:  url('./Waving at Christmas.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
 .hello{
   color: red;
   padding-left: 100px;
   background: url('./icon-eye.png') no-repeat;
   background-position: left;
+  font-family: 'WAC';
+  font-size: 50px;
 }
