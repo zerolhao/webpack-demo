@@ -31,6 +31,18 @@ module.exports = {
         use: [
           'file-loader'
         ]
+      },
+      { // 处理 cvs数据文件
+        test: /\.(csv|tsv)$/,
+        use: [
+          'csv-loader'
+        ]
+      },
+      { // 处理 xml数据文件
+        test: /\.xml$/,
+        use: [
+          'xml-loader'
+        ]
       }
     ]
   }
