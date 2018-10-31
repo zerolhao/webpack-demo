@@ -1,3 +1,6 @@
 .hello{
   color: red;
+  padding-left: 100px;
+  background: url('./icon-eye.png') no-repeat;
+  background-position: left;
 }
