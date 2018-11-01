@@ -9,3 +9,5 @@
     - 加载数据 [`npm install --save-dev csv-loader xml-loader`](https://webpack.docschina.org/guides/asset-management#%E5%8A%A0%E8%BD%BD%E6%95%B0%E6%8D%AE)
         + json 文件内置支持，不需要额外引入loader
         + cvs和xml不支持，需要引入[`csv-loader`](https://github.com/theplatapi/csv-loader) 和 [`xml-loader`](https://github.com/gisikw/xml-loader)
+3. 管理输出
+    - [准备](https://webpack.docschina.org/guides/output-management/#%E9%A2%84%E5%85%88%E5%87%86%E5%A4%87)

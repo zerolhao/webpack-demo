@@ -1,9 +1,12 @@
 import _ from 'lodash';
+// 管理资源例子用到
 import './style.css';
 import IconHome from './icon-home.png';
 import IconEye from './icon-eye.png';
 import xmlData from './xml-data.xml';
 import jsonData from './json-data.json';
+// 管理输出例子用到
+import printMe from './print.js'
 
 function component() {
   var element = document.createElement('div')
@@ -15,6 +18,7 @@ function component() {
 
   element.appendChild(h1)
 
+// 管理资源用例
   // 将图像添加到我们现有的 div
   var iconHome = new Image()
   iconHome.src = IconHome
@@ -49,6 +53,12 @@ function component() {
     jP.appendChild(p)
   })
   element.appendChild(jP)
+
+// 管理输出用例
+  var btn = document.createElement('button')
+  btn.innerHTML = 'Click me and check the console!'
+  btn.addEventListener('click',printMe)
+  element.appendChild(btn)
 
   return element
 }
