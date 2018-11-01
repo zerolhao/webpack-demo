@@ -11,3 +11,26 @@
         + cvs和xml不支持，需要引入[`csv-loader`](https://github.com/theplatapi/csv-loader) 和 [`xml-loader`](https://github.com/gisikw/xml-loader)
 3. 管理输出
     - [准备](https://webpack.docschina.org/guides/output-management/#%E9%A2%84%E5%85%88%E5%87%86%E5%A4%87)
+    - [设定 HtmlWebpackPlugin](https://webpack.docschina.org/guides/output-management/#%E8%AE%BE%E5%AE%9A-htmlwebpackplugin)
+        + HtmlWebpackPlugin 会创建一个全新的html文件，并将所有的 bundle 会自动添加到 html 中。
+        + 原html内meta消失了，待解决
+        ```
+        npm install --save-dev html-webpack-plugin
+          const path = require('path');
+        const HtmlWebpackPlugin = require('html-webpack-plugin');
+        module.exports = {
+          entry: {
+            app: './src/index.js',
+            print: './src/print.js'
+          },
+          plugins: [
+            new HtmlWebpackPlugin({
+              title: 'Output Management'
+            })
+          ],
+           output: {
+             filename: '[name].bundle.js',
+             path: path.resolve(__dirname, 'dist')
+           }
+         };
+        ```
