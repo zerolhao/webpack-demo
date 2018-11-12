@@ -64,5 +64,6 @@ module.exports = {
       title: 'new Output Management'
     })
   ],
+  devtool: 'cheap-module-eval-source-map',
   mode: 'development'
 }

@@ -34,3 +34,6 @@
            }
          };
         ```
+4. 开发
+    - [使用 source map](https://webpack.docschina.org/guides/development/#%E4%BD%BF%E7%94%A8-source-map)追踪错误和警告在源代码中的原始位置
+      + [更多](https://webpack.docschina.org/configuration/devtool/)
