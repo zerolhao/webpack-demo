@@ -64,9 +64,6 @@ module.exports = {
       title: 'new Output Management'
     })
   ],
-  devServer: {
-    contentBase: './dist'
-  },
   devtool: 'cheap-module-eval-source-map',
   mode: 'development'
 }
