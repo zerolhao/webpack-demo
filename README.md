@@ -50,3 +50,25 @@
         // 运行 npm run watch
         // 这种方法需要刷新浏览器才能看到效果
         ```
+      + [使用 webpack-dev-server ](https://webpack.docschina.org/guides/development/#%E4%BD%BF%E7%94%A8-webpack-dev-server)
+        ```
+        npm install --save-dev webpack-dev-server
+
+        // webpack.config.js
+          entry: {
+            app: './src/index.js',
+            print: './src/print.js'
+          },
+          devtool: 'inline-source-map',
+        +   devServer: {
+        +     contentBase: './dist'
+        +   },
+        ...
+        packge.json
+        "scripts": {
+          "test": "echo \"Error: no test specified\" && exit 1",
+          "watch": "webpack --watch",
+        + "start": "webpack-dev-server --open",
+          "build": "webpack"
+        },
+        ```
