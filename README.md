@@ -37,3 +37,16 @@
 4. 开发
     - [使用 source map](https://webpack.docschina.org/guides/development/#%E4%BD%BF%E7%94%A8-source-map)追踪错误和警告在源代码中的原始位置
       + [更多](https://webpack.docschina.org/configuration/devtool/)
+    - [开发工具-自动编译](https://webpack.docschina.org/guides/development/#%E9%80%89%E6%8B%A9%E4%B8%80%E4%B8%AA%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7)
+      + [使用观察模式](https://webpack.docschina.org/guides/development/#%E4%BD%BF%E7%94%A8%E8%A7%82%E5%AF%9F%E6%A8%A1%E5%BC%8F)
+        ```
+        //packge.json
+        "scripts": {
+          "test": "echo \"Error: no test specified\" && exit 1",
+        + "watch": "webpack --watch",
+          "build": "webpack"
+        },
+        ...
+        // 运行 npm run watch
+        // 这种方法需要刷新浏览器才能看到效果
+        ```
